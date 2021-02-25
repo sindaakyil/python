@@ -74,10 +74,10 @@ else :
 # 2.bakım = 2. yıl
 # 3.bakım = 3. yıl
 import datetime
-tarih = int(input('aracınnızı hangi tarihte aldınız(2019/08/08)'))
-tarih= tarih.split('/')
-trafigeCikis = datetime.datetime(int(tarih[0]),int(tarih[1]),int(tarih[3]))
-simdi=datetime.datetime.now()
+tarih = int(input('aracınız hangi tarihte aldınız(2019/08/08): '))
+tarih = tarih.split('/')
+trafigeCikis = datetime.datetime(int(tarih[0]),int(tarih[1]),int(tarih[2]))
+simdi = datetime.datetime.now()
 print(simdi - tarih)
 fark = simdi - trafigeCikis
 print(fark)

@@ -36,7 +36,7 @@ pasword ='abc123'
 girilenEmail = input('email: ')
 girilenPasword = input('parola: ')
 
-isMail = (email==girilenEmail)
-isPasword = (pasword == girilenPasword)
+isMail = (email==girilenEmail.lower().strip()) #lower girlen büyük harf varsa küçük harfe çevirir
+isPasword = (pasword == girilenPasword.lower())# strip ise girlen boşlukları siler
 
 print(f' girilen mail doğru mu {isMail} girilen parola doğru mu : {isPasword}')
