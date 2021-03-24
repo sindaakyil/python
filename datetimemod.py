@@ -43,6 +43,7 @@ print(result)
 print(simdi)
 result=simdi+timedelta(days = 10)
 result=simdi+timedelta(days= 260)
+result=simdi-timedelta(days=10)
 
 
 
